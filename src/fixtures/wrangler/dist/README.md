@@ -1,0 +1,1 @@
+This folder contains the built output assets for the worker "wrangler" generated at 2024-05-04T06:27:05.112Z.
