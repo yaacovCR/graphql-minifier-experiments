@@ -10,16 +10,11 @@ We can however make this work by adding a plugin to replace code, an example
 would be the following
 
 ```js
-// Any rollup/vite-like plugin
-import replace from '@rollup/plugin-replace';
-
 module.exports = mergeConfig(config, {
-  plugins: [
-    replace({
+  define: {
       'process.env.NODE_ENV': JSON.stringify('production'),
       'typeof process': JSON.stringify('object'),
-    })
-  ],
+  },
 });
 ```
 
