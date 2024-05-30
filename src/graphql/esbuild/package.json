@@ -1,0 +1,13 @@
+{
+  "name": "esbuild-graphql",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "NODE_ENV=production esbuild --bundle --minify --define:globalThis.process=true ./main.js > ./output.js"
+  },
+  "devDependencies": {
+    "esbuild": "0.20.2",
+    "graphql": "16.8.1"
+  }
+}
