@@ -1,4 +1,4 @@
-// File: /Users/jovi/Documents/SideProjects/graphql-minifier-experiments/src/fixtures/next/app/layout.tsx
+// File: C:\Users\yaaco\Documents\GitHub\graphql-minifier-experiments\src\fixtures\next\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

@@ -16,7 +16,9 @@ const tryExperiment = isProduction() ? 'works' : 'does not work'
  const plainGlobalThisWIthTypeofProcessExperiment = (typeof globalThis.process !== 'undefined' && globalThis.process.env.NODE_ENV === 'production') ? 'works' : 'does not work';
  const processExperiment = (typeof process !== 'undefined' && process.env.NODE_ENV === 'production') ? 'works' : 'does not work';
  const processWithEnvCheckExperiemnt = (typeof process !== 'undefined' && process.env && process.env.NODE_ENV === 'production') ? 'works' : 'does not work';
-
+ const flipDefault = globalThis.process == null || (process.env.NODE_ENV !== 'development' && process.env.NODE_ENV !== 'test') ? 'works' : 'does not work';
+ const flipDefaultWithoutFlippingGlobalThisProcess = !(globalThis.process != null && (process.env.NODE_ENV === 'development' || process.env.NODE_ENV === 'test')) ? 'works' : 'does not work';
+ 
 export default function Home() {
   return (
     <div>
@@ -33,6 +35,10 @@ export default function Home() {
     <p>{processExperiment}</p>
     <h2>processWithEnvCheckExperiemnt</h2>
     <p>{processWithEnvCheckExperiemnt}</p>
+    <h2>flipDefault</h2>
+    <p>{flipDefault}</p>
+    <h2>flipDefaultWithoutFlippingGlobalThisProcess</h2>
+    <p>{flipDefaultWithoutFlippingGlobalThisProcess}</p>
   </div>
   );
 }

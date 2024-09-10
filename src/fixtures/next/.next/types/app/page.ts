@@ -1,4 +1,4 @@
-// File: /Users/jovi/Documents/SideProjects/graphql-minifier-experiments/src/fixtures/next/app/page.tsx
+// File: C:\Users\yaaco\Documents\GitHub\graphql-minifier-experiments\src\fixtures\next\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
